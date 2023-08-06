@@ -8,6 +8,11 @@ body, html {
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 300px 900px;
+  grid-template-rows: 100px 100px 500px 100px;
 }
 
 .container div {
@@ -16,15 +21,25 @@ body, html {
   font-family: Helvetica;
   font-weight: bold;
   color: white;
-  border-radius: 15px;
+  border-radius: 15px;  
 }
 
 .header {
   background-color: #FFDE22;
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 
 .sidebar {
   background-color: #FF7755;
+
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
 }
 
 .nav {
@@ -44,4 +59,7 @@ body, html {
 
 .footer {
   background-color: #393f4d;
+
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
